@@ -1,3 +1,17 @@
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Le bot est en ligne !"
+
+def run():
+    app.run(host='0.0.0.0', port=10000)
+
+# Lance le serveur web en tâche de fond
+Thread(target=run).start()
 import re
 import asyncio
 from highrise import BaseBot, User, Position, AnchorPosition
