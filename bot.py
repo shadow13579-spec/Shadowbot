@@ -219,7 +219,7 @@ class SuperBotHighrise(BaseBot):
             except Exception as e:
                 await self.highrise.chat("❌ Une erreur est survenue en tentant de copier cette tenue.")
                 if __name__ == "__main__":
-    from highrise.__main__ import main
+        from highrise.__main__ import main
     # Indique à Highrise d'utiliser les variables d'environnement de Render
-    main()
+        main()
 
