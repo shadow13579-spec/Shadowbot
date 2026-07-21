@@ -1,2 +1,3 @@
-discord.py
 highrise-bot-sdk
+discord.py
+flask
