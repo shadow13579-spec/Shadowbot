@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: mon-super-bot
+    runtime: python # Mettez 'node' si c'est un bot javascript
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
